@@ -5,6 +5,21 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 public class JsonHelper {
+	
+	JSONObject _jsonObj;
+	
+	public JsonHelper()
+	{
+		
+	}
+	
+	public JsonHelper(String str) throws ParseException
+	{
+		JSONParser parser = new JSONParser();
+        Object obj = parser.parse( str );
+			
+        _jsonObj = (JSONObject) obj;
+	}
 
 	JSONObject convertJSONObject(String str) throws ParseException
 	{
