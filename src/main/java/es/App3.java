@@ -59,6 +59,9 @@ public class App3 {
 
     public static void main(String[] args) throws ClientProtocolException, IOException, ParseException {
 
+    	//App3.txt
+    	//http://13.124.6.240:9200,blogs,company,url,url,1440m
+    	
     	/*
     	System.out.print("Enter Severinfo (http://13.124.6.240:9200) -> ");
     	_wsUrl = System.console().readLine();//"http://13.124.6.240:9200";
